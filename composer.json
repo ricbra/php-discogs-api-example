@@ -1,0 +1,9 @@
+{
+    "autoload": {
+        "psr-0": { "": "src/" }
+    },
+    "require": {
+      "lusitanian/oauth": "~0.3",
+        "ricbra/php-discogs-api": "~1.1"
+    }
+}
