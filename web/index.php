@@ -1,7 +1,7 @@
 <?php
 
-$consumerKey = 'getthisfromdiscogs';
-$consumerSecret = 'getthisfromdiscogs';
+$consumerKey = 'HrThdSlYXoFEMworzLyd';
+$consumerSecret = 'TsKTtAJysXMNPNfSISOOyTwSryEgXQNY';
 
 require '../vendor/autoload.php';
 

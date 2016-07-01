@@ -23,7 +23,7 @@ class Discogs extends AbstractService
         parent::__construct($credentials, $httpClient, $storage, $signature, $baseApiUri);
 
         if (null === $baseApiUri) {
-            $this->baseApiUri = new Uri('http://api.discogs.com/');
+            $this->baseApiUri = new Uri('https://api.discogs.com/');
         }
     }
 
@@ -32,7 +32,7 @@ class Discogs extends AbstractService
      */
     public function getRequestTokenEndpoint()
     {
-        return new Uri('http://api.discogs.com/oauth/request_token');
+        return new Uri('https://api.discogs.com/oauth/request_token');
     }
 
     /**
@@ -40,7 +40,7 @@ class Discogs extends AbstractService
      */
     public function getAuthorizationEndpoint()
     {
-        return new Uri('http://www.discogs.com/oauth/authorize');
+        return new Uri('https://www.discogs.com/oauth/authorize');
     }
 
     /**
@@ -48,7 +48,7 @@ class Discogs extends AbstractService
      */
     public function getAccessTokenEndpoint()
     {
-        return new Uri('http://api.discogs.com/oauth/access_token');
+        return new Uri('https://api.discogs.com/oauth/access_token');
     }
 
     /**
